@@ -1,3 +1,4 @@
+--Arghavan  Katebi-10/2/2025-IT202:Internet Applications-Section003-Phase 1 Assignment/ak3426@njit.edu--
 CREATE TABLE CandleManagers (
 CandleManagerID  INT(11)        NOT NULL   AUTO_INCREMENT,
  emailAddress        VARCHAR(255)   NOT NULL   UNIQUE,
@@ -18,17 +19,19 @@ VALUES
 INSERT INTO CandleManagers
 (emailAddress, password, pronouns, firstName, lastName)
 VALUES
-('Thomas', SHA2('my23P@ssword', 256), 'He/His', 'Thomas', 'Parker');
+('Thomas@candleshop.com', SHA2('my23P@ssword', 256), 'He/His', 'Thomas', 'Parker');
 
 INSERT INTO CandleManagers
 (emailAddress, password, pronouns, firstName, lastName)
 VALUES
-('Jackie', SHA2('mySh0rt@ssword', 256), 'She/Her', 'Jackie', 'Cox');
+('Jackie@candleshop.com', SHA2('mySh0rt@ssword', 256), 'She/Her', 'Jackie', 'Cox');
 
 INSERT INTO CandleManagers
 (emailAddress, password, pronouns, firstName, lastName)
 VALUES
-('Fred', SHA2('myPass0123@', 256), 'He/His', 'Fred', 'Mack');
+('Fred@candleshop.com', SHA2('myPass0123@', 256), 'He/His', 'Fred', 'Mack');
+
+
 
 
 

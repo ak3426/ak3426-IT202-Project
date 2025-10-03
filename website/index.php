@@ -1,9 +1,10 @@
 <?php
+//Arghavan  Katebi-10/2/2025-IT202:Internet Applications-Section003-Phase 1 Assignment/ak3426@njit.edu//
 session_start();
 ?>
 <!DOCTYPE html>
 <html>
-<head><title>Inventory Helper</title></head>
+<head><title>Candle Store Website</title></head>
 <body>
    <section id="container">
        <main>
@@ -17,4 +18,3 @@ session_start();
        </main>
    </section>
 </body>
-</html>
