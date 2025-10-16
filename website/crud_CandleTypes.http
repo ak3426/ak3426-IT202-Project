@@ -1,0 +1,24 @@
+//Arghavan  Katebi-10/15/2025-IT202:Internet Applications-Section003-Phase 2 Assignment/ak3426@njit.edu//
+POST http://localhost:3000/addcandletype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CandleTypeID=400
+&CandleTypeCode=HOL
+&CandleTypeName=Holiday
+&ShelfNumber=S4
+###
+GET http://localhost:3000/listcandletypes.test.php
+###
+POST http://localhost:3000/changecandletype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CandleTypeID=400
+&CandleTypeCode=SES
+&CandleTypeName=Seasonal
+&ShelfNumber=S4
+###
+POST http://localhost:3000/removecandletype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CandleTypeID=400
+

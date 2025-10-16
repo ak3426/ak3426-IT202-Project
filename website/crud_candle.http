@@ -1,0 +1,35 @@
+//Arghavan  Katebi-10/15/2025-IT202:Internet Applications-Section003-Phase 2 Assignment/ak3426@njit.edu//
+POST http://localhost:3000/addcandle.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CandleID=3004
+&CandleCode=PUM
+&CandleName= Pumpkin Spice
+&CandleDescription=Transform your space into a cozy autumn retreat with this delightful pumpkin-shaped candle.
+&CandleSize=5.23" x 5.23" x 4.8"
+&CandleBurnTime=32 hours
+&CandleColor=Orange
+&CandleTypeID=300
+&CandleWholesalePrice=15.50
+&CandleListPrice=23.95
+###
+GET http://localhost:3000/listcandles.test.php
+###
+POST http://localhost:3000/changecandle.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CandleID=4
+&CandleCode=PMP
+&CandleName=Pumpkin Spice
+&CandleDescription=Transform your space into a cozy autumn retreat with this delightful pumpkin-shaped candle
+&CandleSize=Large
+&CandleBurnTime=24 hours
+&CandleColor=Orange
+&CandleTypeID=300
+&CandleWholesalePrice=16.50
+&CandleListPrice=23.99
+###
+POST http://localhost:3000/removecandle.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CandleID=10000
