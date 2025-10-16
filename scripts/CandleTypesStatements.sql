@@ -26,4 +26,7 @@ INSERT INTO CandleTypes
 VALUES
 (300, 'DECO', 'Decorative', 'S3');
 
+SELECT * FROM CandleTypes;
+
+
 
