@@ -1,5 +1,5 @@
 <?php
-//Arghavan  Katebi-10/15/2025-IT202:Internet Applications-Section003-Phase 2 Assignment/ak3426@njit.edu//
+//Arghavan  Katebi-10/31/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu//
  error_log("\$_POST " . print_r($_POST, true));
  require_once('database.php');
  $emailAddress = $_POST['emailAddress'];

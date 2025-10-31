@@ -1,5 +1,5 @@
 <?php
-//Arghavan  Katebi-10/15/2025-IT202:Internet Applications-Section003-Phase 2 Assignment/ak3426@njit.edu//
+//Arghavan  Katebi-10/31/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu//
 require_once('database.php');
 class Candle
 {
@@ -41,6 +41,7 @@ class Candle
    {
        $output = "<h2>Candle ID: $this->CandleID</h2>" .
        "<h2>Candle Code: $this->CandleCode</h2>\n" .
+       "<h2>Candle Name: $this->CandleName</h2>\n" .
        "<h2>Candle Description: $this->CandleDescription</h2>\n" .
        "<h2>Candle Size: $this->CandleSize</h2>\n" .
        "<h2>Candle Burn Time: $this->CandleBurnTime</h2>\n".
@@ -162,5 +163,34 @@ function removeCandle()
        return $result;
    }
 
+   static function getCandlesByCandleTypes($candleTypeID)
+   {
+       $db = getDB();
+       $query = "SELECT * from Candles where candleTypeID = $candleTypeID";
+       $result = $db->query($query);
+       if (mysqli_num_rows($result) > 0) {
+           $candles = array();
+           while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+               $candle = new Candle(
+                   $row['CandleID'],
+                   $row['CandleCode'],
+                   $row['CandleName'],
+                   $row['CandleDescription'],
+                   $row['CandleSize'],
+                   $row['CandleBurnTime'],
+                   $row['CandleColor'],
+                   $row['CandleTypeID'],
+                   $row['CandleWholesalePrice'],
+                   $row['CandleListPrice']
+               );
+               array_push($candles, $candle);
+           }
+           $db->close();
+           return $candles;
+       } else {
+           $db->close();
+           return NULL;
+       }
+   }
 }
 ?>

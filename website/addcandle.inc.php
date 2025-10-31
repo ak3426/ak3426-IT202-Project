@@ -1,6 +1,7 @@
 <?php
-//Arghavan  Katebi-10/15/2025-IT202:Internet Applications-Section003-Phase 2 Assignment/ak3426@njit.edu//
+//Arghavan  Katebi-10/31/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu//
 require_once('candle.php');
+if (isset($_SESSION['login'])) {
 $candleID = $_POST['CandleID'];
 if ((trim($candleID) == '') or (!is_numeric($candleID))) {
    echo "<h2>Sorry, you must enter a valid candle ID number</h2>\n";
@@ -30,7 +31,9 @@ if ((trim($candleID) == '') or (!is_numeric($candleID))) {
    if ($result)
        echo "<h2>New Candle #$candleID successfully added</h2>\n";
    else
-       echo "<h2>Sorry, there was a problem adding that item</h2>\n";
+       echo "<h2>Sorry, there was a problem adding that candle</h2>\n";
+} } else {
+   echo "<h2>Please login first</h2>\n";
 }
 ?>
 

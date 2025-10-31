@@ -1,5 +1,5 @@
 <?php
-//Arghavan  Katebi-10/15/2025-IT202:Internet Applications-Section003-Phase 2 Assignment/ak3426@njit.edu//
+//Arghavan  Katebi-10/31/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu//
 if (!isset($_SESSION['login'])) {
 ?>
   <h2>Please log in to Candle Store Website</h2><br>
