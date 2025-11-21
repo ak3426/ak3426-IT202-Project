@@ -28,5 +28,11 @@ VALUES
 
 SELECT * FROM CandleTypes;
 
+DELETE FROM CandleTypes WHERE CandleTypeID =120;
+DELETE FROM CandleTypes WHERe CandleTypeID = 700;
+
+DELETE FROM CandleTypes WHERE CandleTypeID = 101;
+
+
 
 

@@ -1,17 +1,20 @@
 <?php
-//Arghavan  Katebi-10/31/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu//
+//Arghavan Katebi-11/21/2025-IT202:Internet Applications-Section003-Phase 4 Assignment/ak3426@njit.edu//
 session_start();
+require_once("config.php");
 require_once("candletype.php");
 require_once("candle.php");
 ?>
 <!DOCTYPE html>
 <html>
 <head><title>Candle Store Website</title></head>
+<link rel="stylesheet" type="text/css" href="ih_styles.css">
+<link rel="icon" type="image/jpg" href="images/logo.jpg">
 <body>
     <header>
        <?php include("header.inc.php"); ?>
    </header>
-    <section style="height: 450px;">
+    <section style="height: 375px;">
      <nav>
            <?php include("nav.inc.php"); ?>
        </nav>

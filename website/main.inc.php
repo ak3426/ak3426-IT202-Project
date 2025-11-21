@@ -1,17 +1,38 @@
+<style>
+ form[name="login"] {
+   display: grid;
+   grid-template-columns: 100px 1fr;
+   gap: 10px 5px;
+   align-items: center;
+   max-width: 300px;
+ }
+ form[name="login"] label {
+   text-align: right;
+   padding-right: 5px;
+ }
+ form[name="login"] input[type="text"],
+ form[name="login"] input[type="password"] {
+   width: 100%;
+ }
+ form[name="login"] input[type="submit"] {
+   grid-column: 2;
+   justify-self: start;
+ }
+</style>
 <?php
-//Arghavan  Katebi-10/31/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu//
+//Arghavan Katebi-11/21/2025-IT202:Internet Applications-Section003-Phase 4 Assignment/ak3426@njit.edu//
 if (!isset($_SESSION['login'])) {
 ?>
   <h2>Please log in to Candle Store Website</h2><br>
   <form name="login" action="index.php" method="post">
     <label>Email:</label>
     <input type="text" name="emailAddress" size="20">
-    <br>
-    <br>
+    <!--br-->
+    <!--br-->
     <label>Password:</label>
     <input type="password" name="password" size="20">
-    <br>
-    <br>
+    <!--br-->
+    <!--br-->
     <input type="submit" value="Login">
     <input type="hidden" name="content" value="validate">
   </form>

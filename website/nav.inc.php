@@ -1,5 +1,5 @@
   <?php
-  //Arghavan  Katebi-10/31/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu//
+  //Arghavan Katebi-11/21/2025-IT202:Internet Applications-Section003-Phase 4 Assignment/ak3426@njit.edu//
    if (isset($_SESSION['login'])) {
    ?>
     <div class="navigation" style="float: left; height: 100%; min-width: 175px; width: auto;">
@@ -8,10 +8,10 @@
          echo "<td><h3>Welcome, {$_SESSION['login']}</h3></td>";
          ?>
         <tr>
-          <td><a href="index.php"><strong>Home</strong></a></td>
+           <td><img src="images/home.png" alt="Home Icon" width="15" height="15">&nbsp;<a href="index.php"><strong>Home</strong></a></td>
         </tr>
         <tr>
-          <td><strong>Candle Types</strong></td>
+          <td><img src="images/candletype.jpg" alt="CandleTypes Icon" width="15" height="15">&nbsp;<strong>Candle Types</strong></td>
         </tr>
         <tr>
           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=listcandletypes">
@@ -22,7 +22,7 @@
               <strong>Add New Candle Type</strong></a></td>
         </tr>
         <tr>
-          <td><strong>Candles</strong></td>
+           <td><img src="images/candles.jpg" alt="Candles Icon" width="15" height="15">&nbsp;<strong>Candles</strong></td>
         </tr>
         <tr>
           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=listcandles">
@@ -39,6 +39,8 @@
         </tr>
         <tr>
           <td><a href="index.php?content=logout">
+              <img src="images/logout.png" alt="Logout Icon" width="15" height="15"></a>&nbsp;
+              <a href="index.php?content=logout">
               <strong>Logout</strong></a></td>
         </tr>
         <tr>

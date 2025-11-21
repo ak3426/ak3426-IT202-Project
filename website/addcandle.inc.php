@@ -2,19 +2,22 @@
 //Arghavan  Katebi-10/31/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu//
 require_once('candle.php');
 if (isset($_SESSION['login'])) {
-$candleID = $_POST['CandleID'];
-if ((trim($candleID) == '') or (!is_numeric($candleID))) {
+$candleID = filter_input(INPUT_POST,'CandleID', FILTER_VALIDATE_INT);
+if ((trim($candleID) == '') or (!is_int($candleID))) {
    echo "<h2>Sorry, you must enter a valid candle ID number</h2>\n";
 } else {
-   $candleCode = $_POST['CandleCode'];
-   $candleName = $_POST['CandleName'];
-   $candleDescription = $_POST['CandleDescription'];
-   $candleSize = $_POST['CandleSize'];
-   $candleBurnTime = $_POST['CandleBurnTime'];
-   $candleColor = $_POST['CandleColor'];
-   $candleTypeID = $_POST['CandleTypeID'];
-   $candleWholesalePrice = $_POST['CandleWholesalePrice'];
-   $candleListPrice = $_POST['CandleListPrice'];
+   $candleCode = htmlspecialchars($_POST['CandleCode']);
+   $candleName = htmlspecialchars($_POST['CandleName']);
+   $candleDescription = htmlspecialchars($_POST['CandleDescription']);
+   $candleSize = htmlspecialchars($_POST['CandleSize']);
+   $candleBurnTime = htmlspecialchars($_POST['CandleBurnTime']);
+   $candleColor =htmlspecialchars($_POST['CandleColor']);
+   $candleTypeID = htmlspecialchars($_POST['CandleTypeID']);
+   $candleWholesalePrice =htmlspecialchars($_POST['CandleWholesalePrice']);
+   $candleListPrice = htmlspecialchars($_POST['CandleListPrice']);
+   $candleTypeID = filter_input(INPUT_POST, 'CandleTypeID', FILTER_VALIDATE_INT);
+   $candleWholesalePrice = filter_input(INPUT_POST, 'CandleWholesalePrice', FILTER_VALIDATE_FLOAT);
+   $candleListPrice = filter_input(INPUT_POST, 'CandleListPrice', FILTER_VALIDATE_FLOAT);
    $candle = new Candle(
        $candleID,
        $candleCode,
@@ -36,4 +39,3 @@ if ((trim($candleID) == '') or (!is_numeric($candleID))) {
    echo "<h2>Please login first</h2>\n";
 }
 ?>
-
