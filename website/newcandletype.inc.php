@@ -12,7 +12,7 @@
        </tr>
        <tr>
            <td>Candle Type Name:</td>
-           <td><input type="text" name="CandleTypeName" minlength="10" maxlength="100" required></td>
+           <td><input type="text" name="CandleTypeName" minlength="5" maxlength="100" required></td>
        </tr>
        <tr>
         <td>Shelf Number:</td>
