@@ -3,6 +3,9 @@
 require_once('candle.php');
 if (isset($_SESSION['login'])) {
 $candleID = filter_input(INPUT_POST,'CandleID', FILTER_VALIDATE_INT);
+$candleTypeID = filter_input(INPUT_POST, 'CandleTypeID', FILTER_VALIDATE_INT);
+$candleWholesalePrice = filter_input(INPUT_POST, 'CandleWholesalePrice', FILTER_VALIDATE_FLOAT);
+$candleListPrice = filter_input(INPUT_POST, 'CandleListPrice', FILTER_VALIDATE_FLOAT);
 if ((trim($candleID) == '') or (!is_int($candleID))) {
    echo "<h2>Sorry, you must enter a valid candle ID number</h2>\n";
 } else {
@@ -15,9 +18,6 @@ if ((trim($candleID) == '') or (!is_int($candleID))) {
    $candleTypeID = htmlspecialchars($_POST['CandleTypeID']);
    $candleWholesalePrice =htmlspecialchars($_POST['CandleWholesalePrice']);
    $candleListPrice = htmlspecialchars($_POST['CandleListPrice']);
-   $candleTypeID = filter_input(INPUT_POST, 'CandleTypeID', FILTER_VALIDATE_INT);
-   $candleWholesalePrice = filter_input(INPUT_POST, 'CandleWholesalePrice', FILTER_VALIDATE_FLOAT);
-   $candleListPrice = filter_input(INPUT_POST, 'CandleListPrice', FILTER_VALIDATE_FLOAT);
    $candle = new Candle(
        $candleID,
        $candleCode,
