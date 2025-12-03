@@ -1,4 +1,4 @@
-<!--Arghavan  Katebi-11/21/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu-->
+<!--Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu-->
 <h2>Enter New Candle Information</h2>
 <form name="newcandle" action="index.php" method="post">
    <table cellpadding="1" border="0">

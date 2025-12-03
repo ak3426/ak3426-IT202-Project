@@ -1,5 +1,5 @@
 <?php
-//Arghavan  Katebi-10/31/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu//
+//Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu//
 require_once('database.php');
 class Candle
 {
@@ -192,5 +192,43 @@ function removeCandle()
            return NULL;
        }
    }
+
+static function getTotalCandles()
+{
+   $db = getDB();
+   $query = "SELECT COUNT(CandleID) FROM Candles";
+   $result = $db->query($query);
+   $row = $result->fetch_array();
+   if ($row) {
+       return $row[0];
+   } else {
+       return NULL;
+   }
+}
+
+static function getTotalWholePrice()
+{
+   $db = getDB();
+   $query = "SELECT SUM(CandleWholesalePrice) FROM Candles";
+   $result = $db->query($query);
+   $row = $result->fetch_array();
+   if ($row) {
+       return $row[0];
+   } else {
+       return NULL;
+   }
+}
+static function getTotalListPrice()
+{
+   $db = getDB();
+   $query = "SELECT SUM(CandleListPrice) FROM Candles";
+   $result = $db->query($query);
+   $row = $result->fetch_array();
+   if ($row) {
+       return $row[0];
+   } else {
+       return NULL;
+   }
+}
 }
 ?>

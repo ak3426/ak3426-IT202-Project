@@ -1,5 +1,23 @@
+<script language="javascript">
+//Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu//
+   function listbox_dblclick() {
+       document.candles.displaycandle.click()
+   }
+   function button_click(target) {
+       var userConfirmed = true;
+       if (target == 1) {
+           userConfirmed = confirm("Are you sure you want to remove this candle?");
+       }
+       if (userConfirmed) {
+           if (target == 0) candle.action = "index.php?content=displaycandle";
+           if (target == 1) candle.action = "index.php?content=removecandle";
+           if (target == 2) candle.action = "index.php?content=updatecandle";
+       } else {
+           alert("Action canceled.");
+       }
+   }
+</script>
 <?php
-//Arghavan Katebi-11/21/2025-IT202:Internet Applications-Section003-Phase 4 Assignment/ak3426@njit.edu//
 require_once("candle.php");
 $candles = Candle::getCandles();
 if ($candles) {
@@ -26,6 +44,10 @@ if ($candles) {
     }
     ?>
    </select>
+   <br>
+   <input type="submit" onClick="button_click(0)" name="displaycandle" value="View Candle">
+   <input type="submit" onClick="button_click(1)" name="deletecandle" value="Delete Candle">
+   <input type="submit" onClick="button_click(2)" name="updatecandle" value="Update Candle">
  </form>
 <?php
 } else {

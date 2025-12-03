@@ -1,5 +1,5 @@
 <?php
-//Arghavan Katebi-11/21/2025-IT202:Internet Applications-Section003-Phase 4 Assignment/ak3426@njit.edu//
+//Arghavan Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu//
 require_once('database.php');
 class CandleType
 {
@@ -107,6 +107,19 @@ class CandleType
        $db->close();
        return $result;
    }
+static function getTotalCandleType()
 
+{
+   $db = getDB();
+   $query = "SELECT COUNT(*) FROM CandleTypes";
+   $result = $db->query($query);
+   $row = $result->fetch_array();
+   if ($row) {
+       return $row[0];
+   } else {
+       return NULL;
+   }
+
+}
 }
 ?>

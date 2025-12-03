@@ -1,4 +1,5 @@
 <style>
+/*Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu*/
  form[name="login"] {
    display: grid;
    grid-template-columns: 100px 1fr;
@@ -20,7 +21,6 @@
  }
 </style>
 <?php
-//Arghavan Katebi-11/21/2025-IT202:Internet Applications-Section003-Phase 4 Assignment/ak3426@njit.edu//
 if (!isset($_SESSION['login'])) {
 ?>
   <h2>Please log in to Candle Store Website</h2><br>

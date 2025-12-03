@@ -3,10 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: sql1.njit.edu
--- Generation Time: Oct 16, 2025 at 05:02 PM
+-- Generation Time: Dec 03, 2025 at 05:15 AM
 -- Server version: 8.0.17
 -- PHP Version: 7.4.8
---Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu--
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -47,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `Candles` (
 --
 
 INSERT INTO `Candles` (`CandleID`, `CandleCode`, `CandleName`, `CandleDescription`, `CandleSize`, `CandleBurnTime`, `CandleColor`, `CandleTypeID`, `CandleWholesalePrice`, `CandleListPrice`, `DateTimeCreated`, `DateTimeUpdated`) VALUES
-(1000, 'SAND', 'Vanilla Sandalwood', 'Top Notes - orange, lemon and bergamot\r\nMiddle Notes - amber, resin, vanilla bean and orchid', 'Medium', '48 hours', 'Black', 100, 19.20, 24.00, '2025-10-15 00:54:02', '2025-10-15 00:54:02'),
+(1000, 'SAND', 'Vanilla Sandalwood', 'Top Notes - orange, lemon and bergamotMiddle Notes - amber, resin, vanilla bean and orchid', 'Medium', '48 hours', 'Black', 100, 19.20, 25.00, '2025-10-15 00:54:02', '2025-12-03 04:59:51'),
 (1001, 'TBC', ' Weathered Tobacco', ' Embrace the rugged charm of Weathered Tobacco. This evocative scent combines the rustic notes of aged tobacco with subtle hints of weathered wood.', 'Large', ' 50 hours', 'Dark Brown', 100, 20.50, 28.95, '2025-10-16 05:24:18', '2025-10-16 05:24:18'),
 (1002, 'CALI', ' California Beach House', 'Inspired by the sun-kissed shores of southern California, brings you premium scents, innovative designs, and affordable luxury.', 'Small', ' 40 hours', 'Blue', 100, 12.50, 18.50, '2025-10-16 05:13:56', '2025-10-16 05:13:56'),
 (1003, 'ECS', ' Eucalyptus Spa', ' Fresh aroma of pure eucalyptus, creating a crisp and clean ambiance that refreshes the senses, invoking a feeling of serenity and natural vitality within your space.', 'Large', ' 72 hours', 'Green', 100, 18.50, 27.95, '2025-10-16 05:17:24', '2025-10-16 05:17:24'),
@@ -61,7 +60,12 @@ INSERT INTO `Candles` (`CandleID`, `CandleCode`, `CandleName`, `CandleDescriptio
 (3001, 'APP', '  Apple Shape Candle', ' Apple shape candles are hand-poured and made with 100% natural soy wax and scented with essential oils. Each candle is handmade so color, scent.', '3" x 3.5"', ' 5 hours', 'Green', 300, 18.50, 26.95, '2025-10-16 05:36:54', '2025-10-16 05:36:54'),
 (3002, 'MSH', ' Mashroom Candle', ' Decorate your home for fall with candles that reflect the season like this large woodland mushroom candle. You can put this candle on a shelf or coffee table tray and combine it with other décor to complete the seasonal look.', '4.9"', '10 hours', 'Red and White', 300, 15.50, 22.95, '2025-10-16 05:40:22', '2025-10-16 05:40:22'),
 (3003, 'CAT', ' Geometric Cat', 'Add a little enchantment to your Halloween décor by incorporating the elegant, soft glow of candlelight into your space. ', '6.3"', '5 hours', 'Black', 300, 5.50, 10.95, '2025-10-16 05:45:20', '2025-10-16 05:45:20'),
-(3004, 'PUM', ' Pumpkin Spice', 'Transform your space into a cozy autumn retreat with this delightful pumpkin-shaped candle.', '5.23" x 5.23" x 4.8"', '32 hours', 'Orange', 300, 15.50, 23.95, '2025-10-16 05:48:07', '2025-10-16 05:48:07');
+(3004, 'PUM', ' Pumpkin Spice', 'Transform your space into a cozy autumn retreat with this delightful pumpkin-shaped candle.', '5.23" x 5.23" x 4.8"', '32 hours', 'Orange', 300, 15.50, 23.95, '2025-10-16 05:48:07', '2025-10-16 05:48:07'),
+(3005, 'DOG', 'Dog', 'Candle Shape Dog', '15*18', '35 Hours', 'Orange and Black', 300, 18.99, 25.99, '2025-10-31 04:13:48', '2025-10-31 15:13:34'),
+(3006, 'SAN', 'Santa', 'Santa with Red Suit', '10 *10', '35 Hours', 'Red', 400, 15.99, 20.00, '2025-10-31 15:04:17', '2025-10-31 15:04:17'),
+(7000, 'CATT', 'Kitty Cat Mat', 'Cute Kitty Cat Decorative Candle,Crafted from all-natural wax, this adorable cat-shaped candle adds charm to any space while ensuring a safe, clean burn. Perfect for home dÃ©cor, gifts, or creating a cozy atmosphere, it combines style and safety in one delightful package ', 'Large', '35hrs', 'Brown', 1, 10.99, 15.99, '2025-11-22 01:36:46', '2025-11-22 04:25:44'),
+(7001, 'BUN', 'Adorable Bunny Rabbit ', 'Adorable Bunny Candle  Crafted with natural, safe wax, this charming bunny-shaped candle adds a touch of whimsy to any room. Perfect for decoration, gifting, or creating a cozy atmosphere, it’s designed to delight both kids and adults while ensuring a clean, safe burn. Bring a little joy and cuteness to your home with this delightful bunny candle!', 'Medium', '48 hou', 'White and Beige ', 700, 10.99, 15.99, '2025-11-22 01:54:38', '2025-11-22 01:54:38'),
+(7002, 'DOGGO', 'Puppy Pals Candle', 'Puppy Pals Candle â€“ This adorable dog-shaped candle is made from natural, safe wax, perfect for adding a playful touch to any room. Ideal for decoration, gifting, or brightening up your space, it combines cuteness with safety. Let this charming pup bring warmth, joy, and a cozy atmosphere wherever itâ€™s displayed', 'Medium', '48 hou', 'Orange', 700, 19.20, 28.95, '2025-11-22 01:58:10', '2025-11-22 01:58:10');
 
 --
 -- Indexes for dumped tables

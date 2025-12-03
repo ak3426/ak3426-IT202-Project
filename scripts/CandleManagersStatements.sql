@@ -1,4 +1,4 @@
---Arghavan  Katebi-10/31/2025-IT202:Internet Applications-Section003-Phase 3 Assignment/ak3426@njit.edu--
+--Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu--
 CREATE TABLE CandleManagers (
 CandleManagerID  INT(11)        NOT NULL   AUTO_INCREMENT,
  emailAddress        VARCHAR(255)   NOT NULL   UNIQUE,

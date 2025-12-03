@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
 -- version 4.2.7.1
 -- http://www.phpmyadmin.net
---<!--Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu-->
+--Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu--
 -- Host: sql1.njit.edu
--- Generation Time: Nov 22, 2025 at 03:34 AM
+-- Generation Time: Dec 03, 2025 at 05:16 AM
 -- Server version: 8.0.17
 -- PHP Version: 7.4.8
 
@@ -46,7 +46,7 @@ INSERT INTO `CandleTypes` (`CandleTypeID`, `CandleTypeCode`, `CandleTypeName`, `
 (400, 'HOL', 'Holiday', 'S4', '2025-10-31 03:41:27', '2025-10-31 03:41:27'),
 (500, 'WED', 'Wedding', 'S5', '2025-10-31 14:50:34', '2025-10-31 14:50:34'),
 (600, 'PAR', 'Party', 'S6', '2025-11-22 01:04:58', '2025-11-22 01:04:58'),
-(700, 'ANM', 'Animals', 'S7', '2025-11-22 01:24:05', '2025-11-22 01:24:05');
+(700, 'ANM', 'Animals', 'S7', '2025-11-22 01:24:05', '2025-12-02 05:12:57');
 
 --
 -- Indexes for dumped tables
