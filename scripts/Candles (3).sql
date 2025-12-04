@@ -1,7 +1,7 @@
 -- phpMyAdmin SQL Dump
 -- version 4.2.7.1
 -- http://www.phpmyadmin.net
---
+--Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu--
 -- Host: sql1.njit.edu
 -- Generation Time: Dec 03, 2025 at 05:15 AM
 -- Server version: 8.0.17
