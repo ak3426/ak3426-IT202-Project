@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
 -- version 4.2.7.1
 -- http://www.phpmyadmin.net
---Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu--
+--
 -- Host: sql1.njit.edu
--- Generation Time: Dec 03, 2025 at 05:15 AM
+-- Generation Time: Dec 05, 2025 at 01:04 AM
 -- Server version: 8.0.17
 -- PHP Version: 7.4.8
 
@@ -46,11 +46,12 @@ CREATE TABLE IF NOT EXISTS `Candles` (
 --
 
 INSERT INTO `Candles` (`CandleID`, `CandleCode`, `CandleName`, `CandleDescription`, `CandleSize`, `CandleBurnTime`, `CandleColor`, `CandleTypeID`, `CandleWholesalePrice`, `CandleListPrice`, `DateTimeCreated`, `DateTimeUpdated`) VALUES
-(1000, 'SAND', 'Vanilla Sandalwood', 'Top Notes - orange, lemon and bergamotMiddle Notes - amber, resin, vanilla bean and orchid', 'Medium', '48 hours', 'Black', 100, 19.20, 25.00, '2025-10-15 00:54:02', '2025-12-03 04:59:51'),
+(1000, 'SAND', 'Vanilla Sandalwood', 'Top Notes - orange, lemon and bergamotMiddle Notes - amber, resin, vanilla bean and orchid', '10 * 12', '24 ho', 'Black', 200, 19.20, 30.00, '2025-10-15 00:54:02', '2025-12-05 00:58:13'),
 (1001, 'TBC', ' Weathered Tobacco', ' Embrace the rugged charm of Weathered Tobacco. This evocative scent combines the rustic notes of aged tobacco with subtle hints of weathered wood.', 'Large', ' 50 hours', 'Dark Brown', 100, 20.50, 28.95, '2025-10-16 05:24:18', '2025-10-16 05:24:18'),
 (1002, 'CALI', ' California Beach House', 'Inspired by the sun-kissed shores of southern California, brings you premium scents, innovative designs, and affordable luxury.', 'Small', ' 40 hours', 'Blue', 100, 12.50, 18.50, '2025-10-16 05:13:56', '2025-10-16 05:13:56'),
 (1003, 'ECS', ' Eucalyptus Spa', ' Fresh aroma of pure eucalyptus, creating a crisp and clean ambiance that refreshes the senses, invoking a feeling of serenity and natural vitality within your space.', 'Large', ' 72 hours', 'Green', 100, 18.50, 27.95, '2025-10-16 05:17:24', '2025-10-16 05:17:24'),
 (1004, 'LIM', ' Limoncello', '  Savor the zestful and tangy essence of Limoncello, offering a vibrant and citrusy aroma reminiscent of freshly peeled lemons.', 'Medium', ' 48 hours', 'Yellow', 100, 15.50, 21.95, '2025-10-16 05:19:40', '2025-10-16 05:19:40'),
+(1006, 'NEW', 'NEW CANDLE', 'Tesssstttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt', 'Large', '21 ho', 'Blue Black', 100, 19.22, 15.91, '2025-12-05 01:00:12', '2025-12-05 01:00:12'),
 (2000, 'LEDSF', 'LED Soft Flame Pillar Candle', 'Give any space a rich, warm ambiance with this Ivory LED Soft Flame Pillar Candle', 'Large', 'N/A', 'White', 200, 10.50, 15.50, '2025-10-15 01:00:44', '2025-10-15 01:18:36'),
 (2001, 'RSE', ' Rose Bud', '  Our Rose Bud flameless candle is hand-poured with genuine wax and is equipped with patented moving-flame technology that rivals the flicker and glow of traditional burning candles.', '3.6" x 4.3"', ' 10 hours', 'Soft Pink', 200, 25.50, 32.95, '2025-10-16 05:22:16', '2025-10-16 05:22:16'),
 (2002, 'RBF', ' Red Berries Pillar', ' Red Berries Flameless Candle Pillar is the highlight of your autumn and winter décor. Real Flame-Effect technology flickers across the wax like the sun shining on the fallen snow.', 'Medium', ' 200 hours', 'White', 200, 25.50, 33.95, '2025-10-16 05:27:25', '2025-10-16 05:27:25'),
@@ -65,7 +66,8 @@ INSERT INTO `Candles` (`CandleID`, `CandleCode`, `CandleName`, `CandleDescriptio
 (3006, 'SAN', 'Santa', 'Santa with Red Suit', '10 *10', '35 Hours', 'Red', 400, 15.99, 20.00, '2025-10-31 15:04:17', '2025-10-31 15:04:17'),
 (7000, 'CATT', 'Kitty Cat Mat', 'Cute Kitty Cat Decorative Candle,Crafted from all-natural wax, this adorable cat-shaped candle adds charm to any space while ensuring a safe, clean burn. Perfect for home dÃ©cor, gifts, or creating a cozy atmosphere, it combines style and safety in one delightful package ', 'Large', '35hrs', 'Brown', 1, 10.99, 15.99, '2025-11-22 01:36:46', '2025-11-22 04:25:44'),
 (7001, 'BUN', 'Adorable Bunny Rabbit ', 'Adorable Bunny Candle  Crafted with natural, safe wax, this charming bunny-shaped candle adds a touch of whimsy to any room. Perfect for decoration, gifting, or creating a cozy atmosphere, it’s designed to delight both kids and adults while ensuring a clean, safe burn. Bring a little joy and cuteness to your home with this delightful bunny candle!', 'Medium', '48 hou', 'White and Beige ', 700, 10.99, 15.99, '2025-11-22 01:54:38', '2025-11-22 01:54:38'),
-(7002, 'DOGGO', 'Puppy Pals Candle', 'Puppy Pals Candle â€“ This adorable dog-shaped candle is made from natural, safe wax, perfect for adding a playful touch to any room. Ideal for decoration, gifting, or brightening up your space, it combines cuteness with safety. Let this charming pup bring warmth, joy, and a cozy atmosphere wherever itâ€™s displayed', 'Medium', '48 hou', 'Orange', 700, 19.20, 28.95, '2025-11-22 01:58:10', '2025-11-22 01:58:10');
+(7002, 'DOGGO', 'Puppy Pals Candle', 'Puppy Pals Candle â€“ This adorable dog-shaped candle is made from natural, safe wax, perfect for adding a playful touch to any room. Ideal for decoration, gifting, or brightening up your space, it combines cuteness with safety. Let this charming pup bring warmth, joy, and a cozy atmosphere wherever itâ€™s displayed', 'Medium', '48 hou', 'Orange', 700, 19.20, 28.95, '2025-11-22 01:58:10', '2025-11-22 01:58:10'),
+(9001, 'ANM', 'Kitty Cat Cute', 'Amber &amp; Sandalwood: Warm yourself on a secluded beach with sun-drenched notes of driftwood, amber, and cardamom. Hints of caramel and patchouli round out this relaxing fragrance experience. Made with a premium plant wax blend and natural-fiber wick for optimal fragrance performance', '12*15', '48 ho', 'ORange', 100, 19.20, 15.99, '2025-12-05 00:15:56', '2025-12-05 00:15:56');
 
 --
 -- Indexes for dumped tables

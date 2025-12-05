@@ -1,9 +1,10 @@
 -- phpMyAdmin SQL Dump
 -- version 4.2.7.1
 -- http://www.phpmyadmin.net
---Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu--
+--//Arghavan  Katebi-12/03/2025-IT202:Internet Applications-Section003-Phase 5 Assignment/ak3426@njit.edu//
+require_once('candle.php');
 -- Host: sql1.njit.edu
--- Generation Time: Dec 03, 2025 at 05:16 AM
+-- Generation Time: Dec 05, 2025 at 01:04 AM
 -- Server version: 8.0.17
 -- PHP Version: 7.4.8
 
@@ -40,7 +41,8 @@ CREATE TABLE IF NOT EXISTS `CandleTypes` (
 --
 
 INSERT INTO `CandleTypes` (`CandleTypeID`, `CandleTypeCode`, `CandleTypeName`, `ShelfNumber`, `DateTimeCreated`, `DateTimeUpdated`) VALUES
-(100, 'SCNT', 'Scented', 'S1', '2025-10-15 00:22:18', '2025-10-15 00:22:18'),
+(100, 'SCNT', 'Scented', 'S1', '2025-10-15 00:22:18', '2025-12-04 23:54:29'),
+(102, 'EXM', 'Example', 'S1', '2025-12-05 00:51:59', '2025-12-05 00:51:59'),
 (200, 'LED', 'LED', 'S2', '2025-10-15 00:23:56', '2025-10-15 00:23:56'),
 (300, 'DECO', 'Decorative', 'S3', '2025-10-15 00:25:44', '2025-10-15 00:25:44'),
 (400, 'HOL', 'Holiday', 'S4', '2025-10-31 03:41:27', '2025-10-31 03:41:27'),
